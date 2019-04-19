@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- ng-cloak is added so that HTML isn't shown in the document before AngularJS has had time to process it -->
+<html ng-app="app3" ng-cloak>
+  <head>
+    <title>AngularJS Tutorial 3</title>
+  </head>
+  <body>
+ 
+    <div id="courseList" ng-controller="courseList">
+	
+      <!-- List the rest of the groceries and skip the 1st index value. ng-repeat contains variables you can use such as $index, $first (true) if first item, $last (true if last item), $middle (true if not 1st or last), $even (true if even), $odd (true if odd) -->
+      <ol>
+        <li ng-repeat = "course in courses">
+          {{course.program}} {{}} {{course.number}} {{}} {{course.name}}
+        </li>
+      </ol>
+ 
+     
+ 
+    </div>
+ 
+    <!-- Load the AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+ 
+    <!-- Load the JS Module -->
+    <script src="ex3_angular.js"></script>
+ 
+  </body>
+</html>

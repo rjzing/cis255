@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>table.html</title>
+	</head>
+	<body>
+		<!--<table border = "1"; align = "center"; width = "100%";>
+			<tr><th width = "100"; align = "left">column 1</th><th width = "100"; align = "left">column 2</th></tr>
+			<tr>
+			<td>row one</td><td> row one / column 2</td>
+			</tr>
+			<td>row two</td><td>row two / column 2</td>
+			</tr>
+			<tr>
+			<td>row three</td><td>row three / column 2</td>
+			</tr>
+		</table>
+		-->
+		<table border = "2">
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td><table width = "100%"; border = "1"; align = "center">
+			<tr><td colspan = "4" align = "right">0.00</td>
+			<tr align = "center"><td>CLR</td><td>MEM</td><td>%</td><td>/</td></tr>
+			<tr align = "center"><td>row three</td><td>row three / column 2</td><td>row three / column 2</td><td>row three / column 2</td></tr>
+			<tr align = "center"><td>row three</td><td>row three / column 2</td><td>row three / column 2</td><td>row three / column 2</td></tr>
+			<tr align = "center"><td>row three</td><td>row three / column 2</td><td>row three / column 2</td><td>row three / column 2</td></tr>
+			<tr align = "center"><td>row three</td><td>row three / column 2</td><td>row three / column 2</td><td>row three / column 2</td></tr>
+		</table></td></tr>
+		</table>
+		
+		<table width = "75%"; border = "1"; align = "center">
+			<tr><td colspan = "4" align = "right">0.00</td>
+			<tr align = "center"><td>CLR</td><td>MEM</td><td>%</td><td>/</td></tr>
+			<tr align = "center"><td>row three</td><td>row three / column 2</td><td>row three / column 2</td><td>row three / column 2</td></tr>
+			<tr align = "center"><td>row three</td><td>row three / column 2</td><td>row three / column 2</td><td>row three / column 2</td></tr>
+			<tr align = "center"><td>row three</td><td>row three / column 2</td><td>row three / column 2</td><td>row three / column 2</td></tr>
+			<tr align = "center"><td><img src = "http://icons.iconarchive.com/icons/kxmylo/simple/256/accessories-calculator-icon.png"; width = "45" /></td><td><img src = "data:image/png;base64,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"; width = "45" /></td><td><img src = "http://icons.iconarchive.com/icons/wwalczyszyn/android-style/256/Calculator-icon.png"; width = "45" /></td><td></td></tr>
+		</table>
+	</body>
+</html>

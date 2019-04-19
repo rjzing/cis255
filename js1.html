@@ -1,0 +1,58 @@
+<html>
+<body>
+
+	<script>
+		x = 5;
+		y = 6;
+		console.log(2*x+y);
+		console.log(2 > 1 ? "hello" : "goodbye");
+		
+		q = "hello "
+		b = "bye"
+		console.log(q + b);
+		
+		console.log(typeof q);
+		
+		x = true;
+		console.log(typeof x);
+
+		console.log("hello " + y);
+		
+		for (i = 0; i <= 100; i++){
+		
+			if (i % 3 == 0){
+			console.log("fizz");
+			}
+			else if (i % 5 == 0){
+			console.log("buzz");
+			}
+			else if(i % 3 == 0 && i % 3 == 0){
+			console.log("fizzbuzz");
+			}
+			else{
+			console.log(i);
+			}
+		}
+		
+		var a = 4;
+		var b = 99;
+		function f(n){
+			var b = 60;
+			var a = 3;
+			return a + b;
+		}
+		console.log(f(a));
+		
+function power(base, exponent) {
+  if (exponent == 0)
+    return 1;
+  else
+    return base * power(base, exponent - 1);
+}
+
+console.log(power(10, 3));
+		
+	</script>
+
+</body>
+</html>

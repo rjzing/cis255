@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="app4" ng-cloak>
+  <head>
+    <title>AngularJS Assignment 2</title>
+    <style>
+	
+	.stripedblue {
+      color:#007FFF;
+      background-color:#DBE9F4;
+    }
+    .stripedbeige {
+      color:#CC0000;
+      background-color:#F5F5DC;
+    }
+
+    </style>
+  </head>
+  <body>
+
+  <h1 align="center">I worked on this for over 12 hours and I just couldn't figure out how to make it work properly</h1>
+  <div ng-controller="eventCtrl">
+	<input type="text" ng-model = "coursePre" ng-change = "coursePre = coursePre.toUpperCase()"><button ng-click = "ready()">Course Prefix</button>
+	<h4>Prefix Entered: {{coursePre}}</h4>
+   
+   <table>
+      <tr ng-repeat="course in courses" ng-class-even="'stripedblue'"
+      ng-class-odd="'stripedbeige'">
+        <td>{{course.prefix}}</td>
+        <td>{{course.courseNumber}}</td>
+		<!--<td>{{q}}</td>-->
+      </tr>
+    </table> 
+	
+	
+
+	</div>
+    <!-- Load the AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <!-- Load the JS Module -->
+    <script src="angular_as2.js"></script>
+	
+	</div>
+  </body>
+</html>
